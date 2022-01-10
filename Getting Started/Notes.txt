@@ -1,0 +1,26 @@
+Node js is a javascript runtime. This means it can allow javascript to run outside of a browser (the server).
+V8 is the engine in which js runs in the browser (created by google) --> compiles to machine code.
+
+by doing node FILENAME on terminal we run the code in the terminal of our machine.
+This is the same as Python3 FILENAME when python is installed.
+
+pending to learn what require means.
+(require is the js equivalent of Python3 import PACKAGE, require('PACKAGENAME') passed as string?)
+
+file handling notes on comments of first-app.js
+
+user --> client(browser/device) --> sends a request to server (mywebsite.com) --> response html back to --> client(browser/device).
+
+
+in server we do (authentication, databases, input validation, business logic) -- not available to the user.
+
+
+NodeJs is not limited to a "server".
+
+NodeJs in the concept of web development is used to run a server and listen to requests.
+the server does the business logic (handle requests, validate input, connect to db)
+the server return responses (render html, json,... )
+
+An alternative to NodeJs could be like python with flask which I am already familiar with.
+
+The REPL is READ EVAL PRINT LOOP accessed by typing node in terminal. Good playground.

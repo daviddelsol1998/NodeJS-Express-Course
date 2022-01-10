@@ -1,0 +1,14 @@
+Javascript summary:
+
+-Weakly typed: No explicit type assignment, compiled on runtime, type can be changed dynamically.
+-Object Oriented
+-Versatile: Run on browser and server. Javascript Engine.
+
+JS in browser cannot accessed the file system./V8 engine nodeJS on server.
+
+Review "this" keyword.
+
+Review map method in Arrays.
+
+Review rest and spread operators
+review distructoring

@@ -1,0 +1,21 @@
+/**
+ * How does the web works?
+ * 
+ * User/Client enters "Domain" ex mypage.com. This
+ * Domain lookup sends a request to the server.
+ * 
+ * NodeJs handles the code that manage that server (backend.)
+ * 
+ * Send back a response (Json/HTML/JS etc..)
+ */
+
+/**
+ * Http Hypertext transfer protocol. Https it's the same adding secure at the end to encrypt data.
+ */
+
+* Some popular core nodejs modules:
+ * Http => launch a server/send requests (to other servers).
+ * Https => launch a SSL server (encrypted) data
+ * fs
+ * path
+ * os

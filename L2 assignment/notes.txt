@@ -1,0 +1,8 @@
+NodeJS allows to "not re-invent the wheel"......
+framework as third party package.
+
+ejs handles req, res and next easier.
+res.send() is a express added method
+
+a callback is a function
+app.next() goes to the next middleware

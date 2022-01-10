@@ -1,0 +1,76 @@
+JS is OOP. Review Reference vs Primitive types.
+
+Primitive types:
+String
+Number
+Boolean
+Undefined
+Null
+Symbol
+
+
+Stored on STACK memory;
+
+----------------------------------------------------------------
+Primary types when retrived, return the value they hold instead of the type of value:
+
+var name = "David";
+console.log(name); --> "David"
+
+var otherName = name;
+console.log(otherName); --> "David"
+
+
+name = "Ameerah";
+console.log(secondName); --> "David" (Because it's not referencing to the variable but holds original value at assignment.)
+
+
+Primitive values are copied by value, not by the reference of the value itself.
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+Reference types:
+
+Object/Arrays
+
+Stored on HEAP;
+
+(Js OBJECT) Python equivalent of a dictionary.
+
+var person = {
+    age:23,
+    name: "David",
+    hobbies: ['Watching AEW','Playing guitar']
+};
+
+
+                            [object Object] {
+                                age: 23,
+console.log(person); -->        name: 'David',
+                                hobbies: [ 'Watching AEW', 'Playing guitar' ]
+                            }
+
+
+var secondPerson = person;
+console.log(secondPerson);
+
+                            [object Object] {
+                                age: 23,
+console.log(secondPerson); -->  name: 'David',
+                                hobbies: [ 'Watching AEW', 'Playing guitar' ]
+                            }
+
+person.name = "Ameerah";
+
+                            [object Object] {
+                                age: 23,
+console.log(secondPerson); -->  name: 'Ameerah',
+                                hobbies: [ 'Watching AEW', 'Playing guitar' ]
+                            }
+
+Reference types store pointers to the object in the heap.
+
+push is python equivalent to append.
+
+array = ["firstValue", "secondValue"]
+array.push('newValue'); --> array = ["firstValue", "secondValue", "newValue"];
