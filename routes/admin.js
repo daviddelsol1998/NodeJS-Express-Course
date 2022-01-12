@@ -3,16 +3,21 @@ const router = express.Router();
 // setup paths
 const path = require('path');
 
-const rootDir = require('../util/path')
+const rootDir = require('../util/path');
+
+// variable to hold Products
+const products = [];
 
 router.get('/add-product', (req, res, next) => {
     // send a response here.
-    res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+    // res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+    res.render('add-product', { pageTitle: 'Add Product' });
 });
 
 router.post('/add-product', (req, res, next) => {
-    console.log(req.body);
+    products.push({ title: req.body.title });
     res.redirect('/') // redirect is very convinient to send to another page
 });
 
-module.exports = router;
+exports.routes = router;
+exports.products = products;
