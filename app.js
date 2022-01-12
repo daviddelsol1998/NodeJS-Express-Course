@@ -12,7 +12,7 @@ const shopRoutes = require('./routes/shop')
 const bodyParser = require('body-parser');
 
 // set up global configuration.
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
