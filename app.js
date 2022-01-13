@@ -5,7 +5,7 @@ const app = express(); // create app instance
 
 const path = require('path');
 
-const adminData = require('./routes/admin')
+const adminRoutes = require('./routes/admin')
 const shopRoutes = require('./routes/shop')
 
 //setup parser.
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // setup a middleware
 // the admin string parameters adds segment for each route.
-app.use('/admin', adminData.routes);
+app.use('/admin', adminRoutes);
 
 app.use(shopRoutes);
 app.use(express.static(path.join(__dirname, 'public')));
