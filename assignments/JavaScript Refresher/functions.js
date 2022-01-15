@@ -6,11 +6,9 @@ Variables and simple datatypes:
 - var is an outdated keyword in ES6 we use let and const
 const don't change, let can change. when const is changed it generates an error.
 */
-const name = 'David'; //string
+const name = "David"; //string
 let age = 23; // number
 const hasHobbies = true; // boolean
-
-
 
 /* --------------------------------
 Functions:
@@ -19,10 +17,17 @@ it is the python equivalent of def
 - syntax goes as folllows:
 */
 function sumarizeUser(userName, userAge, userHasHobbies) {
-    return ('Name is ' + userName + ', age is ' + userAge + ', has hobbies is: ' + userHasHobbies);
+  return (
+    "Name is " +
+    userName +
+    ", age is " +
+    userAge +
+    ", has hobbies is: " +
+    userHasHobbies
+  );
 }
 
-console.log(sumarizeUser(name,age,hasHobbies));
+console.log(sumarizeUser(name, age, hasHobbies));
 
 /* --------------------------------
 Arrow Functions: 
@@ -35,9 +40,15 @@ example:
 console.log(userSummary(userName, userAge, userHasHobbies));
 */
 const userSummary = (userName, userAge, userHasHobbies) => {
-    return ('Name is ' + userName + ', age is ' + userAge + ', has hobbies is: ' + userHasHobbies);
-}
-
+  return (
+    "Name is " +
+    userName +
+    ", age is " +
+    userAge +
+    ", has hobbies is: " +
+    userHasHobbies
+  );
+};
 
 // console.log(userSummary(name,age,hasHobbies));
 
@@ -50,5 +61,5 @@ const returnSum = (a,b) => {
 can be re written as 
 */
 
-const add = (a,b) => a+b;
+const add = (a, b) => a + b;
 // console.log(add(2,3));

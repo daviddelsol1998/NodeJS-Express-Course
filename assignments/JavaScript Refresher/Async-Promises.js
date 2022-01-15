@@ -6,18 +6,18 @@ console.log('Hello');
 */
 
 const fetchData = (callback) => {
-    setTimeout(() => {
-        callback('Done');
-    }, 1500);
+  setTimeout(() => {
+    callback("Done");
+  }, 1500);
 };
 
-
-setTimeout(() => { // this is async code
-    console.log('Timer is done');
-    fetchData((text) => {
-        console.log(text);
-    });
+setTimeout(() => {
+  // this is async code
+  console.log("Timer is done");
+  fetchData((text) => {
+    console.log(text);
+  });
 }, 2000);
 
-console.log('Hi'); // synchronous code
-console.log('Hello');
+console.log("Hi"); // synchronous code
+console.log("Hello");

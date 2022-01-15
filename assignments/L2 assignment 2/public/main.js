@@ -1,1 +1,1 @@
-alert('This js static file is working!');
+alert("This js static file is working!");

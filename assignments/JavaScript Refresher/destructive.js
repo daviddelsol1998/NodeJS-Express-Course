@@ -1,11 +1,11 @@
 const person = {
-    name: 'John',
-    age: 34
+  name: "John",
+  age: 34,
 };
 
 const printName = (personData) => {
-    console.log(personData.name);
-}
+  console.log(personData.name);
+};
 
 printName(person);
 
@@ -16,13 +16,13 @@ const printName = (personData) => {
 }
 */
 
-const getName = ({name}) => {
-    console.log(name);
-}
+const getName = ({ name }) => {
+  console.log(name);
+};
 
 getName(person);
 
-let favortieNumbers = [7,3];
+let favortieNumbers = [7, 3];
 
-const [favNum1,favNum2] = favortieNumbers;
+const [favNum1, favNum2] = favortieNumbers;
 console.log(favNum1);
