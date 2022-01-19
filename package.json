@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "start-server": "node app.js",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    "start-server": "node app.js"
   },
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
@@ -24,8 +23,6 @@
     "mongodb": "^3.1.6",
     "mongoose": "^5.2.17",
     "mysql2": "^1.6.1",
-    "prettier": "^2.5.1",
-    "pretty": "^2.0.0",
     "pug": "^2.0.3",
     "sequelize": "^5.0.0-beta.11"
   }
